@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to my quick ASP app, Enjoy the video!</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/L4fanHl2beA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p>How long until you watch the video?</p>
+<input id="seconds" value="" />
+<button onclick="countdown()">Click here</button>
+<p id="timer"></p>
